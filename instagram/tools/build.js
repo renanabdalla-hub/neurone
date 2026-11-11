@@ -73,14 +73,18 @@ function slideHTML(s, i, n) {
   return `<section class="f slide ${theme}"><div class="wrapc">${inner}</div>${foot(s, i, n)}</section>`;
 }
 
+const NET = `<svg class="net" viewBox="0 0 400 260" fill="none" stroke="#D8C3A0" stroke-width="1.4"><path d="M20 200 L90 120 L170 160 L240 70 L320 120 L380 40 M90 120 L120 40 L240 70 M170 160 L210 240 L320 120 M120 40 L60 30"/><g fill="#B08D57" stroke="none"><circle cx="20" cy="200" r="5"/><circle cx="90" cy="120" r="6"/><circle cx="170" cy="160" r="5"/><circle cx="240" cy="70" r="7"/><circle cx="320" cy="120" r="5"/><circle cx="380" cy="40" r="4"/><circle cx="120" cy="40" r="4"/><circle cx="210" cy="240" r="5"/><circle cx="60" cy="30" r="3"/></g></svg>`;
 function sceneHTML(p, sc, i, n) {
-  const theme = i === 0 || i === n - 1 ? 'ink' : (i % 2 ? 'ivory' : 'sand');
-  const glyph = sc.k.length <= 2 ? `<div class="glyph">${esc(sc.k)}</div>` : '';
-  return { theme, html: `<section class="f scene ${theme}">
-    <div class="topbrand"><span style="display:flex;gap:16px;align-items:center"><img src="${LOGO}">Neurone</span><span class="count">${String(i + 1).padStart(2, '0')} / ${String(n).padStart(2, '0')}</span></div>
-    ${glyph}<div class="kicker">${md(sc.k)}</div><h2 class="h ${plain(sc.h).length > 34 ? 'lg' : 'xl'}">${md(sc.h)}</h2><div class="line"></div>
-    <div class="sub">${esc(sc.n)}</div></section>` };
+  const theme = sc.big || i === 0 || i === n - 1 ? 'ink' : (i % 2 ? 'ivory' : 'sand');
+  const top = `<div class="topbrand"><span style="display:flex;gap:16px;align-items:center"><img src="${LOGO}">Neurone</span><span class="count">${String(i + 1).padStart(2, '0')} / ${String(n).padStart(2, '0')}</span></div>`;
+  let body;
+  if (sc.big) body = `<div class="rel">${esc(sc.rel)}</div><div class="bigw" style="font-size:${plain(sc.big).length <= 4 ? 300 : plain(sc.big).length <= 9 ? 205 : 165}px">${esc(sc.big)}</div><div class="line"></div><div class="capl">${esc(sc.cap)}</div>`;
+  else if (sc.name) body = `<div class="kicker">${md(sc.k)}</div><div class="namecard">${NET}<div class="nm">Fernanda Iotti</div><div class="role">Fisioterapeuta</div><div class="spec">Neurológica</div><div class="cref">20 anos · ex-HCor · Pós HC-FMUSP · CREFITO-3 000000-F</div></div>`;
+  else { const glyph = sc.k.length <= 2 ? `<div class="glyph">${esc(sc.k)}</div>` : '';
+    body = `${glyph}<div class="kicker">${md(sc.k)}</div><h2 class="h ${plain(sc.h).length > 34 ? 'lg' : 'xl'}">${md(sc.h)}</h2><div class="line"></div>`; }
+  return { theme, html: `<section class="f scene ${theme}">${top}${body}<div class="sub">${esc(sc.n)}</div></section>` };
 }
+const sceneLabel = sc => sc.big ? `${sc.rel} · ${sc.big} — ${sc.cap}` : sc.name ? `${sc.k} — Fernanda Iotti, Fisioterapeuta Neurológica (cartela de nome)` : `${plain(sc.k)} — ${plain(sc.h)}`;
 
 const coverHTML = p => `<section class="f scene cover-reel ink"><div class="arc" style="width:1100px;height:1100px;right:-560px;bottom:-200px"></div>
   <div class="kicker">${md(p.cover.k)}</div><h1 class="h">${md(p.cover.h)}</h1><div class="line"></div><div class="playtag">▶ Reel · Neurone</div>
@@ -135,7 +139,7 @@ async function buildReel(pg, p) {
 
 | # | Tempo | Texto na tela | Narração (voz em off) |
 |---|---|---|---|
-${rows.map(r => `| ${r.i} | ${ts(r.start)}–${ts(r.end)} | **${plain(r.sc.k)}** — ${plain(r.sc.h)} | ${r.sc.n} |`).join('\n')}
+${rows.map(r => `| ${r.i} | ${ts(r.start)}–${ts(r.end)} | ${sceneLabel(r.sc)} | ${r.sc.n} |`).join('\n')}
 
 **Narração completa (para a Fernanda regravar com a própria voz):**
 > ${p.scenes.map(s => s.n).join(' ')}

@@ -78,3 +78,16 @@ ul.items li::before { content: ""; position: absolute; left: 6px; top: 40px; wid
 
 .wrapc { flex: 1; display: flex; flex-direction: column; justify-content: center; padding-bottom: 40px; }
 .slide .num-big { bottom: 140px; }
+
+/* Gancho "família + diagnóstico + perda funcional" */
+.scene .rel { font-size: 40px; letter-spacing: .3em; text-transform: uppercase; color: #C9D0DB; font-weight: 600; }
+.scene .bigw { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: 300px; line-height: .95; color: var(--gold-soft); margin-top: 30px; letter-spacing: -.01em; }
+.scene .bigw.long { font-size: 170px; line-height: 1; }
+.scene .capl { margin-top: 40px; font-size: 50px; line-height: 1.3; letter-spacing: .1em; text-transform: uppercase; color: var(--ivory); font-weight: 500; max-width: 860px; }
+.scene .namecard { position: relative; margin-top: 60px; margin-bottom: 120px; }
+.scene .namecard .net { position: absolute; right: -40px; top: -60px; width: 560px; opacity: .9; }
+.scene .namecard .nm { font-family: "Cormorant Garamond", serif; font-size: 150px; line-height: 1; position: relative; }
+.scene .namecard .role { font-size: 44px; letter-spacing: .3em; text-transform: uppercase; color: var(--gold); margin-top: 26px; font-weight: 600; }
+.scene .namecard .spec { font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 140px; color: var(--gold); line-height: 1; }
+.scene .namecard .cref { margin-top: 40px; font-size: 30px; color: var(--ink-soft); letter-spacing: .04em; }
+.scene.ink .namecard .cref { color: #AEB7C6; }

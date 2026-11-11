@@ -67,12 +67,13 @@ const CONTENT = {
       title: "Quem cuida de você",
       cover: { k: "Apresentação", h: "20 anos de neurologia. Agora, *na sua casa*." },
       scenes: [
-        { k: "Prazer, Fernanda", h: "Da UTI neurológica…", n: "Durante vinte anos, eu acompanhei pacientes neurológicos dentro dos hospitais. Da UTI à reabilitação." },
-        { k: "HCor · BP · HC-FMUSP", h: "…à coordenação de *equipes*.", n: "Foram doze anos no HCor, coordenando equipes, criando protocolos e medindo a evolução de cada paciente." },
-        { k: "O que eu aprendi", h: "A alta não é o *fim* do caminho.", n: "E uma coisa eu aprendi: a alta hospitalar não é o fim da recuperação. Muitas vezes, é ali que ela começa de verdade." },
-        { k: "Neurone", h: "Padrão hospitalar, *acolhimento* de casa.", n: "Por isso nasceu a Neurone. Fisioterapia neurológica com padrão hospitalar, no conforto e no ritmo da sua casa." },
-        { k: "Para quem", h: "AVC · Parkinson · EM · TCE e mais", n: "Para quem viveu um AVC, convive com Parkinson, Esclerose Múltipla ou outra condição neurológica. E para a família que cuida junto." },
-        { k: "Vamos conversar?", h: "Siga e conheça a *Neurone*.", n: "Se você quer entender como a fisioterapia neurológica pode ajudar alguém que você ama, me acompanha por aqui." }
+        { rel: "O seu pai", big: "AVC", cap: "ainda não consegue andar sozinho", n: "O seu pai teve um AVC e ainda não consegue andar sozinho?" },
+        { rel: "A sua mãe", big: "Parkinson", cap: "os passos ficaram curtos e inseguros", n: "A sua mãe tem Parkinson, e os passos ficaram curtos e inseguros?" },
+        { rel: "O seu avô", big: "Alta hospitalar", cap: "voltou para casa, mas não voltou a ser quem era", n: "Ou o seu avô recebeu alta do hospital, mas ainda não voltou a ser quem era?" },
+        { name: true, k: "Você não está sozinho", h: "Fernanda Iotti", n: "Se você vive alguma dessas situações, saiba que não está sozinho. Eu sou a Fernanda Iotti, fisioterapeuta neurológica há vinte anos." },
+        { k: "HCor · BP · HC-FMUSP", h: "Da UTI neurológica à *sua casa*.", n: "Depois de doze anos coordenando a fisioterapia neurológica no HCor, hoje eu levo esse mesmo cuidado para a casa do paciente." },
+        { k: "O objetivo", h: "Autonomia e *segurança*.", n: "AVC, Parkinson, Esclerose Múltipla, lesão medular, traumatismo craniano. Em todos os casos, o objetivo é o mesmo: autonomia e segurança no dia a dia." },
+        { k: "Conhece alguém assim?", h: "Envie este vídeo para *essa pessoa*.", n: "Conhece alguém que está passando por isso? Envie este vídeo. E se quiser conversar, eu estou à disposição." }
       ],
       broll: "Mãos da Fernanda ajustando um jaleco; corredor de casa iluminado; prancheta com escala de avaliação; mãos guiando um passo (de costas).",
       caption: "Prazer, eu sou a Fernanda. 💛\n\nPor 20 anos, acompanhei pacientes neurológicos dentro dos hospitais — da UTI neurológica da BP aos 12 anos no HCor, onde coordenei equipes e criei protocolos para medir a evolução de cada paciente.\n\nNesse caminho, aprendi que a alta não é o fim da recuperação. Muitas vezes, é ali que ela começa.\n\nA Neurone nasceu para levar esse padrão hospitalar até a casa do paciente — com tempo, escuta e um plano feito só para ele.\n\n📍 Homecare na Zona Sul e Oeste de SP · Online para todo o Brasil\n\nDra. Fernanda Iotti · Fisioterapeuta · CREFITO-3 000000-F",
@@ -108,14 +109,15 @@ const CONTENT = {
     /* ============================ SEMANA 2 ============================ */
     { id: "04", date: "2026-11-23", type: "reel", pillar: "Cuidar em casa",
       title: "Como é uma sessão em casa",
-      cover: { k: "Homecare", h: "Como é uma sessão de fisioterapia *em casa*?" },
+      cover: { k: "Homecare", h: "Em casa, a gente treina *a vida real*." },
       scenes: [
-        { k: "Homecare", h: "Como é uma sessão em casa?", n: "Muitas famílias me perguntam como funciona uma sessão de fisioterapia neurológica em casa. Eu te mostro." },
-        { k: "Antes de tudo", h: "Escutar o paciente — e a *família*.", n: "Toda sessão começa com uma conversa. Como foi a semana, o que melhorou, o que ainda preocupa." },
-        { k: "No ambiente real", h: "Treinar onde a vida *acontece*.", n: "Depois, treinamos no ambiente real: levantar da cama, ir ao banheiro, subir um degrau. São os desafios de verdade do dia a dia." },
-        { k: "Com método", h: "Metas claras e *mensuráveis*.", n: "Cada exercício tem um objetivo. E, de tempos em tempos, reaplicamos escalas para medir a evolução." },
-        { k: "Para quem cuida", h: "Orientação para a *família*.", n: "No final, oriento quem cuida: como ajudar com segurança e o que pode ser feito entre as sessões." },
-        { k: "Neurone", h: "Padrão hospitalar, *no seu tempo*.", n: "É o mesmo cuidado que aplicávamos no hospital, agora no conforto e no ritmo da sua casa." }
+        { k: "Homecare", h: "Como é uma sessão *em casa*?", n: "Muitas famílias me perguntam como é uma sessão de fisioterapia neurológica em casa. A resposta é: a gente treina a vida real." },
+        { rel: "No quarto", big: "Levantar", cap: "da cama e da cadeira, com segurança", n: "Levantar da cama e da cadeira com segurança." },
+        { rel: "No corredor", big: "Caminhar", cap: "até o banheiro, sem medo de cair", n: "Caminhar até o banheiro sem medo de cair." },
+        { rel: "Na mesa", big: "Comer", cap: "com as próprias mãos", n: "Fazer as refeições com as próprias mãos." },
+        { k: "Por que funciona", h: "O cérebro aprende o que tem *significado*.", n: "Treinar tarefas reais, no ambiente real, é uma das formas mais eficazes de reabilitação. O cérebro aprende melhor aquilo que faz sentido para a pessoa." },
+        { k: "Com método", h: "Metas claras e *medidas*.", n: "Cada sessão tem um objetivo. E, de tempos em tempos, reaplicamos escalas para mostrar a evolução para a família." },
+        { k: "Neurone", h: "Padrão hospitalar, *no seu tempo*.", n: "É o cuidado que aplicávamos no hospital, agora no conforto e no ritmo da sua casa." }
       ],
       broll: "Porta da casa se abrindo; mãos lavando com álcool gel; mão no ombro de um idoso (de costas); levantar da cadeira com apoio; anotação em prancheta.",
       caption: "Como é uma sessão de fisioterapia neurológica em casa? 🏡\n\n1. Escuta: como foi a semana, o que melhorou, o que preocupa.\n2. Treino no ambiente real: cama, banheiro, cadeira, degraus.\n3. Método: metas claras e escalas para medir a evolução.\n4. Orientação para a família ajudar com segurança.\n\nÉ o padrão hospitalar, com o acolhimento da casa.\n\n📍 Moema · Brooklin · Vila Olímpia · Itaim Bibi · Jardim Europa · Pinheiros · Butantã · Chácara Santo Antônio\n\nDra. Fernanda Iotti · CREFITO-3 000000-F",
@@ -198,7 +200,7 @@ const CONTENT = {
       title: "3 erros ao ajudar a levantar",
       cover: { k: "Para quem cuida", h: "3 erros ao ajudar alguém a *levantar* da cama." },
       scenes: [
-        { k: "Para quem cuida", h: "3 erros comuns ao ajudar a *levantar*.", n: "Se você ajuda alguém a levantar da cama, preste atenção nestes três erros comuns." },
+        { rel: "Você que cuida", big: "Todo dia", cap: "ajuda alguém a levantar da cama?", n: "Você ajuda alguém a levantar da cama todos os dias? Então preste atenção nestes três erros comuns." },
         { k: "Erro 1", h: "Puxar pelo *braço*.", n: "Erro um: puxar pelo braço. Principalmente depois de um AVC, isso pode machucar o ombro. Apoie no tronco e na escápula." },
         { k: "Erro 2", h: "Fazer *tudo* pela pessoa.", n: "Erro dois: fazer tudo pela pessoa. Dê tempo e espaço para ela participar. Cada pequeno esforço é treino." },
         { k: "Erro 3", h: "Levantar *de uma vez*.", n: "Erro três: levantar de uma vez. Primeiro, role de lado. Depois, sente na beira da cama e espere alguns segundos antes de ficar em pé." },
@@ -240,7 +242,7 @@ const CONTENT = {
       title: "Parkinson não é só tremor",
       cover: { k: "Parkinson", h: "Parkinson *não é só* tremor." },
       scenes: [
-        { k: "Parkinson", h: "Não é *só* tremor.", n: "Quando a gente fala em Parkinson, a primeira imagem é o tremor. Mas a doença vai muito além dele." },
+        { rel: "A sua mãe", big: "Parkinson", cap: "e todo mundo só fala do tremor", n: "A sua mãe tem Parkinson, e todo mundo só fala do tremor? A doença vai muito além dele." },
         { k: "Sinais motores", h: "Lentidão e *rigidez*.", n: "Lentidão para se mover, rigidez muscular e passos mais curtos são sinais muito comuns." },
         { k: "Postura", h: "Corpo *inclinado* para frente.", n: "A postura tende a ficar curvada, e o equilíbrio fica mais difícil, aumentando o risco de quedas." },
         { k: "Além do movimento", h: "Sono, olfato, *humor*.", n: "Também existem sinais não motores: alterações do sono, do olfato, do intestino e do humor." },
@@ -324,7 +326,7 @@ const CONTENT = {
       title: "Casa segura contra quedas",
       cover: { k: "Checklist", h: "Casa segura contra quedas em *30 segundos*." },
       scenes: [
-        { k: "Checklist", h: "Sua casa é *segura*?", n: "Em trinta segundos, um checklist para deixar a casa mais segura contra quedas." },
+        { rel: "A sua avó", big: "Quedas", cap: "já caiu ou tem medo de cair?", n: "A sua avó já caiu, ou vive com medo de cair? Em trinta segundos, um checklist para deixar a casa mais segura." },
         { k: "Chão", h: "Sem tapetes *soltos*.", n: "No chão: tire tapetes soltos, fios e objetos do caminho." },
         { k: "Banheiro", h: "Barras e piso *antiderrapante*.", n: "No banheiro: barras de apoio, tapete antiderrapante e, se preciso, cadeira de banho." },
         { k: "Noite", h: "Luz no *caminho*.", n: "À noite: uma luz acesa no caminho entre o quarto e o banheiro." },
@@ -365,7 +367,7 @@ const CONTENT = {
       title: "Esclerose Múltipla e fadiga",
       cover: { k: "Esclerose Múltipla", h: "Fadiga na EM: a regra da *energia*." },
       scenes: [
-        { k: "Esclerose Múltipla", h: "Não é *preguiça*. É fadiga.", n: "Na Esclerose Múltipla, a fadiga é um dos sintomas mais comuns. E ela não é preguiça." },
+        { rel: "Você", big: "Esclerose Múltipla", cap: "e um cansaço que ninguém entende", n: "Você tem Esclerose Múltipla e sente um cansaço que ninguém entende? Isso tem nome: fadiga. E ela não é preguiça." },
         { k: "Imagine", h: "Uma bateria que descarrega *rápido*.", n: "Imagine uma bateria que descarrega mais rápido. A estratégia é usar essa energia com inteligência." },
         { k: "Planeje", h: "O mais importante, *primeiro*.", n: "Planeje o dia. Deixe as atividades que exigem mais energia para os horários em que você se sente melhor." },
         { k: "Pause", h: "Pausas *antes* do cansaço.", n: "Faça pausas antes de chegar ao limite, e não depois." },
@@ -406,7 +408,7 @@ const CONTENT = {
       title: "Paralisia facial: primeiras semanas",
       cover: { k: "Paralisia facial", h: "Acordou com o rosto *torto*? O que fazer." },
       scenes: [
-        { k: "Paralisia facial", h: "O rosto ficou *torto* de repente?", n: "Acordou com um lado do rosto paralisado? O primeiro passo é procurar um médico com urgência para descartar um AVC." },
+        { rel: "Ao acordar", big: "Paralisia facial", cap: "um lado do rosto não se mexe", n: "Acordou e um lado do rosto não se mexe? O primeiro passo é procurar um médico com urgência para descartar um AVC." },
         { k: "Paralisia de Bell", h: "A forma mais *comum*.", n: "Muitas vezes, o diagnóstico é paralisia facial periférica, ou paralisia de Bell. A maioria das pessoas se recupera." },
         { k: "Olho", h: "Proteja o *olho*.", n: "Se o olho não fecha bem, ele precisa de proteção: colírio lubrificante e orientação médica." },
         { k: "Cuidado", h: "Sem caretas *forçadas*.", n: "Evite fazer caretas fortes e exercícios intensos sem orientação. Isso pode favorecer movimentos involuntários depois." },
@@ -447,7 +449,7 @@ const CONTENT = {
       title: "Pés formigando: neuropatia",
       cover: { k: "Neuropatia", h: "Pés formigando? Atenção ao *equilíbrio*." },
       scenes: [
-        { k: "Neuropatia periférica", h: "Pés formigando ou *dormentes*?", n: "Formigamento, queimação ou dormência nos pés podem ser sinais de neuropatia periférica." },
+        { rel: "O seu pai", big: "Diabetes", cap: "e os pés formigando ou dormentes", n: "O seu pai tem diabetes e sente os pés formigando ou dormentes? Isso pode ser neuropatia periférica." },
         { k: "Causas comuns", h: "Diabetes e *quimioterapia*.", n: "Entre as causas mais comuns estão o diabetes e alguns tratamentos de quimioterapia." },
         { k: "O risco", h: "Menos sensibilidade, *mais quedas*.", n: "Quando o pé sente menos o chão, o equilíbrio fica comprometido e o risco de quedas aumenta." },
         { k: "Cuidados", h: "Olhe os pés *todos os dias*.", n: "Olhe os pés todos os dias, use calçados fechados e confortáveis e mantenha a casa bem iluminada." },
@@ -488,7 +490,7 @@ const CONTENT = {
       title: "Lesão medular: o nível da lesão",
       cover: { k: "Lesão medular", h: "O que significa o *nível* da lesão?" },
       scenes: [
-        { k: "Lesão medular", h: "O *nível* da lesão importa.", n: "Na lesão medular, uma informação é fundamental para a reabilitação: o nível da lesão." },
+        { rel: "Depois do acidente", big: "Lesão medular", cap: "e uma rotina que mudou de uma vez", n: "Depois de uma lesão medular, a rotina muda de uma vez. E uma informação é fundamental para a reabilitação: o nível da lesão." },
         { k: "Como funciona", h: "A medula é uma *estrada*.", n: "A medula é como uma estrada que leva as mensagens do cérebro ao corpo. Abaixo do ponto lesionado, essa comunicação é afetada." },
         { k: "Quanto mais alto", h: "Mais funções *envolvidas*.", n: "Quanto mais alta a lesão, mais funções podem ser afetadas. Por exemplo, uma lesão no pescoço pode envolver braços e mãos." },
         { k: "Completa ou incompleta", h: "Cada caso é *único*.", n: "A lesão também pode ser completa ou incompleta, e isso muda as possibilidades de recuperação." },
@@ -529,7 +531,7 @@ const CONTENT = {
       title: "Paralisia cerebral: além de alongar",
       cover: { k: "Paralisia Cerebral", h: "Fisioterapia na PC vai *muito além* de alongar." },
       scenes: [
-        { k: "Paralisia Cerebral", h: "Muito além de *alongar*.", n: "Na paralisia cerebral, a fisioterapia vai muito além de alongar." },
+        { rel: "O seu filho", big: "Paralisia cerebral", cap: "e a fisioterapia parece só alongar?", n: "O seu filho tem paralisia cerebral, e a fisioterapia parece ser só alongar? Ela vai muito além disso." },
         { k: "O foco", h: "*Participar* da vida.", n: "O foco é a participação: brincar, ir à escola, se locomover, fazer parte das atividades da família." },
         { k: "Como", h: "Metas com a *família*.", n: "As metas são definidas junto com a família, de acordo com o que é importante para aquela criança ou adulto." },
         { k: "O que trabalhamos", h: "Postura, mobilidade, *autonomia*.", n: "Trabalhamos controle postural, mobilidade, transferências e uso de recursos de apoio quando necessário." },

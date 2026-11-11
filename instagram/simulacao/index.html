@@ -192,7 +192,7 @@ function capHTML(p) {
   return `<div class="cap">${esc(p.caption)}\n\n<span class="tags">${esc(p.hashtags)}</span></div>`;
 }
 function roteiroHTML(p) {
-  return `<details class="rot" open><summary>🎙️ Roteiro e narração (${p.scenes.length} cenas)</summary><table>${p.scenes.map((s, i) => `<tr><td>Cena ${i + 1}</td><td><b>${esc(s.h.replace(/\*/g, ''))}</b><br>${esc(s.n)}</td></tr>`).join('')}</table><div class="nar"><b>B-roll sugerido:</b> ${esc(p.broll)}</div></details>`;
+  return `<details class="rot" open><summary>🎙️ Roteiro e narração (${p.scenes.length} cenas)</summary><table>${p.scenes.map((s, i) => `<tr><td>Cena ${i + 1}</td><td><b>${esc(s.big ? `${s.rel} · ${s.big} — ${s.cap}` : s.name ? 'Cartela: Fernanda Iotti · Fisioterapeuta Neurológica' : s.h.replace(/\*/g, ''))}</b><br>${esc(s.n)}</td></tr>`).join('')}</table><div class="nar"><b>B-roll sugerido:</b> ${esc(p.broll)}</div></details>`;
 }
 let slideIdx = 0;
 function openPost(id) {

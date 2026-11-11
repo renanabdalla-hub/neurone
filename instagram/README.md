@@ -71,3 +71,17 @@ Toda segunda, registre os posts da semana anterior em uma planilha:
 | Bairro/perfil do lead | Manual | Qualificação (público A/B nas regiões-alvo) |
 
 Revisão a cada 4 semanas: repita os temas com mais **envios + comentários de contato** em outro formato, troque os ganchos com retenção baixa e ajuste os horários pelo gráfico de atividade dos seguidores.
+
+## Referência: @beatrizsaldanha.r (o que aprendemos e aplicamos)
+Análise dos 3 Reels enviados (transcrições e prints de 15/out/2026):
+
+| O que funciona nela | Como aplicamos na Neurone |
+|---|---|
+| **Gancho com familiar + diagnóstico + perda concreta** ("O seu pai teve um AVC e não consegue mais andar sozinho?") | Cena 1 dos Reels em três níveis: **relação** em caixa-alta ("O SEU PAI"), **diagnóstico** grande em serifa dourada ("AVC") e **perda funcional** ("AINDA NÃO CONSEGUE ANDAR SOZINHO"). Aplicado nos Reels 01, 04, 10, 13, 19, 22, 25, 28, 31 e 34 |
+| Acolhimento antes da apresentação ("você não está sozinho") | Reel 01: "Você não está sozinho. Eu sou a Fernanda Iotti…" |
+| Cartela de nome elegante com grafismo de rede neural | Cena-cartela "Fernanda Iotti · Fisioterapeuta *Neurológica*" com a rede de sinapses dourada da marca |
+| Conceito técnico explicado em uma frase (neuroplasticidade, treino orientado à tarefa) | Reel 04 (treinar a vida real: levantar, caminhar, comer) e carrossel 05 (neuroplasticidade) |
+| CTA suave de compartilhamento ("mande esse vídeo pra essa pessoa") | Reel 01 termina com "Envie este vídeo para essa pessoa" |
+| Comentários de pedido ("Meu pai precisa") | Esse é o nosso KPI. Responder em público com acolhimento e seguir no Direct |
+
+**Diferenciação:** ela usa marrom e terracota com a profissional sempre em cena. A Neurone mantém o **azul-noite + marfim + dourado** e o formato **tipográfico**, que respeita a timidez da Fernanda. A autoridade vem dos 20 anos de hospital, do HCor, do HC-FMUSP e da pesquisa, um diferencial que a referência não tem. Quando a Fernanda se sentir à vontade, o mesmo roteiro pode ser gravado com ela falando para a câmera e as legendas tipográficas por cima, como a referência faz.

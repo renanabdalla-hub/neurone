@@ -1,19 +1,20 @@
 # 04 · Como é uma sessão em casa
 **segunda, 23/11/2026** · Reel · Pilar: Cuidar em casa · Duração: ~47s
 
-**Capa (texto):** Como é uma sessão de fisioterapia em casa?
+**Capa (texto):** Em casa, a gente treina a vida real.
 
 | # | Tempo | Texto na tela | Narração (voz em off) |
 |---|---|---|---|
-| 1 | 0:00–0:08 | **Homecare** — Como é uma sessão em casa? | Muitas famílias me perguntam como funciona uma sessão de fisioterapia neurológica em casa. Eu te mostro. |
-| 2 | 0:08–0:15 | **Antes de tudo** — Escutar o paciente — e a família. | Toda sessão começa com uma conversa. Como foi a semana, o que melhorou, o que ainda preocupa. |
-| 3 | 0:15–0:26 | **No ambiente real** — Treinar onde a vida acontece. | Depois, treinamos no ambiente real: levantar da cama, ir ao banheiro, subir um degrau. São os desafios de verdade do dia a dia. |
-| 4 | 0:26–0:34 | **Com método** — Metas claras e mensuráveis. | Cada exercício tem um objetivo. E, de tempos em tempos, reaplicamos escalas para medir a evolução. |
-| 5 | 0:34–0:40 | **Para quem cuida** — Orientação para a família. | No final, oriento quem cuida: como ajudar com segurança e o que pode ser feito entre as sessões. |
-| 6 | 0:40–0:47 | **Neurone** — Padrão hospitalar, no seu tempo. | É o mesmo cuidado que aplicávamos no hospital, agora no conforto e no ritmo da sua casa. |
+| 1 | 0:00–0:10 | Homecare — Como é uma sessão em casa? | Muitas famílias me perguntam como é uma sessão de fisioterapia neurológica em casa. A resposta é: a gente treina a vida real. |
+| 2 | 0:10–0:13 | No quarto · Levantar — da cama e da cadeira, com segurança | Levantar da cama e da cadeira com segurança. |
+| 3 | 0:13–0:17 | No corredor · Caminhar — até o banheiro, sem medo de cair | Caminhar até o banheiro sem medo de cair. |
+| 4 | 0:17–0:21 | Na mesa · Comer — com as próprias mãos | Fazer as refeições com as próprias mãos. |
+| 5 | 0:21–0:32 | Por que funciona — O cérebro aprende o que tem significado. | Treinar tarefas reais, no ambiente real, é uma das formas mais eficazes de reabilitação. O cérebro aprende melhor aquilo que faz sentido para a pessoa. |
+| 6 | 0:32–0:41 | Com método — Metas claras e medidas. | Cada sessão tem um objetivo. E, de tempos em tempos, reaplicamos escalas para mostrar a evolução para a família. |
+| 7 | 0:41–0:47 | Neurone — Padrão hospitalar, no seu tempo. | É o cuidado que aplicávamos no hospital, agora no conforto e no ritmo da sua casa. |
 
 **Narração completa (para a Fernanda regravar com a própria voz):**
-> Muitas famílias me perguntam como funciona uma sessão de fisioterapia neurológica em casa. Eu te mostro. Toda sessão começa com uma conversa. Como foi a semana, o que melhorou, o que ainda preocupa. Depois, treinamos no ambiente real: levantar da cama, ir ao banheiro, subir um degrau. São os desafios de verdade do dia a dia. Cada exercício tem um objetivo. E, de tempos em tempos, reaplicamos escalas para medir a evolução. No final, oriento quem cuida: como ajudar com segurança e o que pode ser feito entre as sessões. É o mesmo cuidado que aplicávamos no hospital, agora no conforto e no ritmo da sua casa.
+> Muitas famílias me perguntam como é uma sessão de fisioterapia neurológica em casa. A resposta é: a gente treina a vida real. Levantar da cama e da cadeira com segurança. Caminhar até o banheiro sem medo de cair. Fazer as refeições com as próprias mãos. Treinar tarefas reais, no ambiente real, é uma das formas mais eficazes de reabilitação. O cérebro aprende melhor aquilo que faz sentido para a pessoa. Cada sessão tem um objetivo. E, de tempos em tempos, reaplicamos escalas para mostrar a evolução para a família. É o cuidado que aplicávamos no hospital, agora no conforto e no ritmo da sua casa.
 
 **Imagens de apoio (B-roll) para a versão filmada:** Porta da casa se abrindo; mãos lavando com álcool gel; mão no ombro de um idoso (de costas); levantar da cadeira com apoio; anotação em prancheta.
 
