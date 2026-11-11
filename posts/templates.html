@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Neurone · Templates de posts</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --ink:#1B2A41; --ink-soft:#3A4A63; --ivory:#F7F2EA; --sand:#EDE4D7; --gold:#B08D57; --gold-soft:#D8C3A0; --rose:#C9A196; }
+  * { box-sizing: border-box; margin: 0; }
+  body { background: #999; font-family: Manrope, sans-serif; display: flex; flex-wrap: wrap; gap: 40px; padding: 40px; }
+  .slide { width: 1080px; height: 1350px; position: relative; overflow: hidden; background: var(--ivory); color: var(--ink); padding: 110px 100px; display: flex; flex-direction: column; }
+  .slide.sq { height: 1080px; }
+  .serif { font-family: "Cormorant Garamond", serif; }
+  .kicker { font-size: 26px; letter-spacing: .24em; text-transform: uppercase; font-weight: 700; color: var(--gold); display: flex; align-items: center; gap: 20px; }
+  .kicker::before { content: ""; width: 60px; height: 2px; background: var(--gold); }
+  .h-xl { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: 112px; line-height: 1.02; letter-spacing: -.01em; margin-top: 60px; }
+  .h-lg { font-family: "Cormorant Garamond", serif; font-weight: 500; font-size: 96px; line-height: 1.05; margin-top: 50px; }
+  em { font-style: italic; color: var(--gold); }
+  .body { font-size: 42px; line-height: 1.5; color: var(--ink-soft); margin-top: 44px; }
+  .body strong { color: var(--ink); }
+  .foot { margin-top: auto; display: flex; justify-content: space-between; align-items: center; font-size: 24px; color: var(--ink-soft); letter-spacing: .06em; }
+  .foot .brand { display: flex; align-items: center; gap: 16px; font-weight: 700; }
+  .foot .brand img { width: 54px; }
+  .swipe { display: flex; align-items: center; gap: 12px; font-weight: 600; color: var(--gold); }
+  .num-big { position: absolute; right: 80px; bottom: 120px; font-family: "Cormorant Garamond", serif; font-size: 420px; line-height: 1; color: var(--gold-soft); opacity: .35; }
+  .line { width: 120px; height: 2px; background: var(--gold); margin-top: 50px; }
+  .dark { background: var(--ink); color: var(--ivory); }
+  .dark .body { color: #C9D0DB; }
+  .dark .foot { color: #AEB7C6; }
+  .dark em { color: var(--gold-soft); }
+  .sand { background: var(--sand); }
+  .arc { position: absolute; width: 900px; height: 900px; border: 2px solid var(--gold-soft); border-radius: 50%; right: -420px; bottom: -420px; }
+  .arc.two { width: 700px; height: 700px; right: -320px; bottom: -320px; opacity: .6; }
+  .chip { display: inline-block; border: 2px solid var(--gold); color: var(--ink); border-radius: 999px; padding: 14px 30px; font-size: 28px; font-weight: 600; margin: 0 14px 18px 0; }
+  .dark .chip { color: var(--ivory); }
+  .cta-box { margin-top: 60px; background: var(--white, #fff); border-radius: 30px; padding: 50px 56px; box-shadow: 0 30px 60px -40px rgba(27,42,65,.6); }
+  .dark .cta-box { background: #24375A; }
+  .cta-box .word { font-family: "Cormorant Garamond", serif; font-size: 96px; font-weight: 600; color: var(--gold); letter-spacing: .06em; line-height: 1; margin: 18px 0; }
+  .sig { font-family: "Cormorant Garamond", serif; font-style: italic; font-size: 44px; color: var(--ink); margin-top: 40px; }
+  .avatar { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 4px solid var(--gold-soft); }
+  /* Capas de destaque */
+  .hl { width: 1080px; height: 1080px; display: grid; place-items: center; background: var(--ivory); }
+  .hl .ring { width: 820px; height: 820px; border-radius: 50%; background: var(--ink); display: grid; place-items: center; color: var(--ivory); text-align: center; position: relative; }
+  .hl .ring::after { content: ""; position: absolute; inset: -26px; border-radius: 50%; border: 3px solid var(--gold); }
+  .hl .ring span { font-family: "Cormorant Garamond", serif; font-size: 150px; font-style: italic; color: var(--gold-soft); line-height: 1; display: block; }
+  .hl .ring small { display: block; font-size: 52px; letter-spacing: .2em; text-transform: uppercase; margin-top: 30px; font-weight: 600; }
+  .hl.rose .ring { background: var(--rose); } .hl.rose .ring span { color: var(--ivory); }
+  .hl.gold .ring { background: var(--gold); } .hl.gold .ring span { color: var(--ink); }
+  /* Foto de perfil */
+  .pfp { width: 1080px; height: 1080px; background: var(--ivory); display: grid; place-items: center; }
+  .pfp img { width: 640px; }
+</style>
+</head>
+<body>
+
+<!-- ======================================================
+     CARROSSEL 1 — "5 sinais de que seu familiar precisa…" (post âncora de KPI)
+     ====================================================== -->
+<section class="slide" id="c1-01">
+  <div class="kicker">Para famílias</div>
+  <h1 class="h-xl">Ele recebeu alta.<br>Mas ainda <em>não voltou</em> a ser quem era.</h1>
+  <p class="body">5 sinais de que seu familiar precisa de <strong>fisioterapia neurológica</strong> em casa — e por que não vale esperar.</p>
+  <div class="arc"></div><div class="arc two"></div>
+  <div class="foot"><div class="brand"><img src="../site/assets/logo.svg" alt="">@fisioterapianeurone</div><div class="swipe">deslize →</div></div>
+</section>
+
+<section class="slide" id="c1-02">
+  <div class="num-big">1</div>
+  <div class="kicker">Sinal 01</div>
+  <h2 class="h-lg">Precisa de ajuda para levantar da cama ou da cadeira.</h2>
+  <div class="line"></div>
+  <p class="body">Transferências são a base da independência. Quando dependem sempre de alguém, a pessoa se movimenta menos — e perde força a cada dia. <strong>Isso pode ser treinado.</strong></p>
+  <div class="foot"><div class="brand"><img src="../site/assets/logo.svg" alt="">Neurone</div><div>2/7</div></div>
+</section>
+
+<section class="slide" id="c1-03">
+  <div class="num-big">2</div>
+  <div class="kicker">Sinal 02</div>
+  <h2 class="h-lg">Os passos ficaram curtos, arrastados ou inseguros.</h2>
+  <div class="line"></div>
+  <p class="body">Mudanças na marcha aumentam muito o risco de quedas — e uma queda pode significar uma nova internação. A avaliação mostra <strong>exatamente onde está o desequilíbrio.</strong></p>
+  <div class="foot"><div class="brand"><img src="../site/assets/logo.svg" alt="">Neurone</div><div>3/7</div></div>
+</section>
+
+<section class="slide sand" id="c1-04">
+  <div class="num-big">3</div>
+  <div class="kicker">Sinal 03</div>
+  <h2 class="h-lg">Um lado do corpo está mais fraco, rígido ou “esquecido”.</h2>
+  <div class="line"></div>
+  <p class="body">Após um AVC, é comum o braço ficar dobrado e a perna mais pesada. Sem estímulo, a rigidez (espasticidade) tende a aumentar. <strong>Os primeiros meses são uma janela valiosa.</strong></p>
+  <div class="foot"><div class="brand"><img src="../site/assets/logo.svg" alt="">Neurone</div><div>4/7</div></div>
+</section>
+
+<section class="slide" id="c1-05">
+  <div class="num-big">4</div>
+  <div class="kicker">Sinal 04</div>
+  <h2 class="h-lg">Passa a maior parte do dia deitado ou sentado.</h2>
+  <div class="line"></div>
+  <p class="body">A imobilidade traz encurtamentos, dores, perda de massa muscular e até complicações respiratórias. <strong>Movimento orientado é prevenção.</strong></p>
+  <div class="foot"><div class="brand"><img src="../site/assets/logo.svg" alt="">Neurone</div><div>5/7</div></div>
+</section>
+
+<section class="slide" id="c1-06">
+  <div class="num-big">5</div>
+  <div class="kicker">Sinal 05</div>
+  <h2 class="h-lg">A família está cansada e com medo de ajudar “do jeito errado”.</h2>
+  <div class="line"></div>
+  <p class="body">Cuidar também se aprende. Parte do tratamento é <strong>ensinar quem cuida</strong> a ajudar com segurança — sem machucar o paciente nem a si mesmo.</p>
+  <div class="foot"><div class="brand"><img src="../site/assets/logo.svg" alt="">Neurone</div><div>6/7</div></div>
+</section>
+
+<section class="slide dark" id="c1-07">
+  <div class="kicker">Você reconheceu algum?</div>
+  <h2 class="h-lg">Não é “coisa da idade”. <em>Tem tratamento.</em></h2>
+  <div class="cta-box">
+    <p class="body" style="margin:0">Comente a palavra</p>
+    <div class="word">CUIDADO</div>
+    <p class="body" style="margin:0">e eu te explico, com carinho, como a fisioterapia neurológica pode ajudar o seu familiar.</p>
+  </div>
+  <div class="foot"><div class="brand"><img src="../site/assets/logo.svg" alt="" style="filter:invert(1) brightness(1.4)">Dra. Fernanda Iotti · CREFITO-3 000000-F</div><div>7/7</div></div>
+</section>
+
+<!-- ======================================================
+     CAPAS — outros formatos da identidade
+     ====================================================== -->
+<section class="slide dark" id="capa-avc">
+  <div class="kicker">AVC · Entenda</div>
+  <h1 class="h-xl">O cérebro <em>reaprende</em>. Mas ele precisa ser ensinado.</h1>
+  <p class="body">O que é a neuroplasticidade e por que os primeiros 6 meses após um AVC importam tanto.</p>
+  <div class="arc" style="border-color:#3A4A63"></div>
+  <div class="foot"><div class="brand"><img src="../site/assets/logo.svg" alt="" style="filter:invert(1) brightness(1.4)">@fisioterapianeurone</div><div class="swipe" style="color:var(--gold-soft)">deslize →</div></div>
+</section>
+
+<section class="slide" id="capa-parkinson">
+  <div class="kicker">Parkinson</div>
+  <h1 class="h-xl">Os pés “grudam” no chão?</h1>
+  <p class="body">3 estratégias que usamos na reabilitação para destravar o <strong>congelamento da marcha</strong> — com base em mais de 20 anos de experiência.</p>
+  <div style="margin-top:50px"><span class="chip">pistas visuais</span><span class="chip">ritmo</span><span class="chip">dupla tarefa</span></div>
+  <div class="foot"><div class="brand"><img src="../site/assets/logo.svg" alt="">@fisioterapianeurone</div><div class="swipe">deslize →</div></div>
+</section>
+
+<section class="slide sand" id="capa-mito">
+  <div class="kicker">Mito ou verdade</div>
+  <h1 class="h-xl">“Depois de um ano do AVC, não tem mais o que fazer.”</h1>
+  <p class="body" style="font-size:54px;font-family:'Cormorant Garamond',serif;color:var(--gold);font-style:italic;margin-top:60px">Mito. E eu te explico por quê.</p>
+  <div class="foot"><div class="brand"><img src="../site/assets/logo.svg" alt="">@fisioterapianeurone</div><div class="swipe">deslize →</div></div>
+</section>
+
+<section class="slide" id="capa-bastidor">
+  <div class="kicker">Por trás do cuidado</div>
+  <h1 class="h-lg" style="margin-top:60px">“Em 12 anos de hospital, aprendi que <em>a família também é paciente</em>.”</h1>
+  <p class="sig">— Fernanda Iotti</p>
+  <img class="avatar" src="../site/assets/avatar-fernanda.jpg" alt="" style="margin-top:60px">
+  <div class="foot"><div class="brand"><img src="../site/assets/logo.svg" alt="">@fisioterapianeurone</div><div class="swipe">deslize →</div></div>
+</section>
+
+<!-- ======================================================
+     CAPAS DE DESTAQUES (1080x1080 — o Instagram recorta em círculo)
+     ====================================================== -->
+<div class="hl" id="hl-comece"><div class="ring"><div><span>olá</span><small>Comece aqui</small></div></div></div>
+<div class="hl gold" id="hl-indicacoes"><div class="ring"><div><span>AVC+</span><small>Indicações</small></div></div></div>
+<div class="hl" id="hl-homecare"><div class="ring"><div><span>casa</span><small>Homecare</small></div></div></div>
+<div class="hl rose" id="hl-online"><div class="ring"><div><span>on</span><small>Online</small></div></div></div>
+<div class="hl" id="hl-familias"><div class="ring"><div><span>amor</span><small>Famílias</small></div></div></div>
+<div class="hl gold" id="hl-regioes"><div class="ring"><div><span>SP</span><small>Regiões</small></div></div></div>
+<div class="hl rose" id="hl-sobre"><div class="ring"><div><span>Fê</span><small>Sobre mim</small></div></div></div>
+<div class="hl" id="hl-duvidas"><div class="ring"><div><span>?</span><small>Dúvidas</small></div></div></div>
+
+<!-- FOTO DE PERFIL (provisória, até a sessão de fotos) -->
+<div class="pfp" id="perfil-logo"><img src="../site/assets/logo.svg" alt=""></div>
+
+</body>
+</html>
